@@ -25,15 +25,48 @@ window.onload = function() {
 
   let canvas = document.getElementById("canvas");
   let canvasCtx = canvas.getContext("2d");
-  canvas.width = 1800;
-  canvas.height = 700;
+  canvas.width = window.innerWidth;
+  canvas.height = 600;
   let WIDTH = canvas.width;
   let HEIGHT = canvas.height;
-  let barWidth = (WIDTH / bufferLength) * 3;
+  let barWidth = (WIDTH / bufferLength) * 8;
   let barHeight;
   let x = 0;
 
 
+  let reset = document.getElementById("reset");
+  let setcolor1 = document.getElementById("setcolor1");
+  let setcolor2 = document.getElementById("setcolor2");
+  let setcolor3 = document.getElementById("setcolor3");
+  let setcolor4 = document.getElementById("setcolor4");
+
+  let color1 = "black";
+  let color2 = "black";
+  let color3 = "black";
+  let color4 = "black";
+
+  setcolor1.addEventListener("click", function(){
+    color1 = "#FFEEFC";
+  });
+
+  setcolor2.addEventListener("click", function(){
+    color2 = "#B5FFE3";
+  });
+
+  setcolor3.addEventListener("click", function(){
+    color3 = "#FFD8B1";
+  });
+
+  setcolor4.addEventListener("click", function(){
+    color4 = "#C9DEFF";
+  });
+
+  reset.addEventListener("click", function(){
+    color1 = "black";
+    color2 = "black";
+    color3 = "black";
+    color4 = "black";
+  });
 
   function render(){
     requestAnimationFrame(render);
@@ -41,27 +74,29 @@ window.onload = function() {
 
     analyser.getByteFrequencyData(dataArray);
 
+    canvasCtx.clearRect(0,0,WIDTH,HEIGHT);
     canvasCtx.fillStyle = "black";
-    canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
+    canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
-    for (let i = 0; i < bufferLength; i++) {
-      barHeight = dataArray[i] * 2;
-
-
-      let lingrad = canvasCtx.createLinearGradient(0, 0, 0, 1200);
-      lingrad.addColorStop(0, '#FFEEFC');
-      lingrad.addColorStop(0.3, '#B5FFE3');
-      lingrad.addColorStop(0.6, '#FFD8B1');
-      lingrad.addColorStop(0.9, '#F1C8FF');
+    for (let i = 0; i < bufferLength; i ++) {
+      barHeight = dataArray[i] * 1.5;
 
 
+      let gradient = canvasCtx.createLinearGradient(0, 0, 3000, 0);
+      gradient.addColorStop(0, color1);
+      gradient.addColorStop(0.25, color2);
+      gradient.addColorStop(0.35, color3);
+      gradient.addColorStop(0.7, color4);
 
-      canvasCtx.fillStyle = lingrad;
-      canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
 
-      canvasCtx.lineWidth = 2;
 
-      x += barWidth + 10;
+      canvasCtx.fillStyle = gradient;
+      canvasCtx.fillRect(x * 2, HEIGHT-barHeight, barWidth, barHeight);
+      canvasCtx.imageSmoothingEnabled = false;
+
+      canvasCtx.lineWidth = 10;
+
+      x += barWidth;
     }
   }
   audio.play();

@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   font-family: arial, "Microsoft YaHei";
-background: black;
+  background: black;
   color: #FEFEFE;
   display:flex;
   justify-content: center;
@@ -9,6 +9,11 @@ background: black;
 
 #content {
   background: black;
+}
+
+.color-controller{
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -20,7 +25,6 @@ h1 {
 canvas {
   display: flex;
   justify-content: center;
-  /* background-image: url('Clouds.jpg'); */
 }
 
 .audio-and-file {

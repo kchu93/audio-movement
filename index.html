@@ -1,15 +1,29 @@
 <div class="content">
   <link rel="stylesheet" href="am.css">
-  <h1 class="audio-movement-header">Audio Movement</h1>
-  <p>
-    <span id="filename"><span>
-  </p>
-  <canvas id="canvas"></canvas>
-  <div class="audio-and-file">
-    <input type="file" class="thefile" id="thefile" accept="audio/*" />
+  <link rel="stylesheet" href="color.css">
+
     <div>
+      <h1 class="audio-movement-header">Audio Movement</h1>
+      <p>
+        <span id="filename"><span>
+      </p>
+    </div>
+
+    <div>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="audio-and-file">
+      <input type="file" class="thefile" id="thefile" accept="audio/*" />
       <audio id="audio" controls></audio>
-    <div>
-  <div>
+    </div>
+
+    <div class="color-controller">
+      <button class="color1" id="setcolor1"></button>
+      <button class="color2" id="setcolor2"></button>
+      <button class="color3" id="setcolor3"></button>
+      <button class="color4" id="setcolor4"></button>
+      <button class="reset" id="reset">Reset</button>
+    </div>
   <script type="application/javascript" src="audio_movement.js"></script>
 </div>
