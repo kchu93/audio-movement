@@ -10,12 +10,6 @@ html, body {
 #content {
   background: black;
 }
-
-.color-controller{
-  display: flex;
-  justify-content: center;
-}
-
 h1 {
   display: flex;
   justify-content: center;
@@ -25,6 +19,8 @@ h1 {
 canvas {
   display: flex;
   justify-content: center;
+  width: 100vw;
+  height: 30vw;
 }
 
 .audio-and-file {

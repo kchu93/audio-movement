@@ -1,6 +1,6 @@
 <div class="content">
-  <link rel="stylesheet" href="am.css">
-  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="./css/am.css">
+  <link rel="stylesheet" href="./css/color.css">
 
     <div>
       <h1 class="audio-movement-header">Audio Movement</h1>
@@ -18,12 +18,38 @@
       <audio id="audio" controls></audio>
     </div>
 
-    <div class="color-controller">
-      <button class="color1" id="setcolor1"></button>
-      <button class="color2" id="setcolor2"></button>
-      <button class="color3" id="setcolor3"></button>
-      <button class="color4" id="setcolor4"></button>
-      <button class="reset" id="reset">Reset</button>
+    <div class="color-controller-container">
+      <div class="color-controller">
+        <button class="gradientbutton" id="gradient1">Gradient 1</button>
+        <button class="gradientbutton" id="gradient2">Gradient 2</button>
+        <button class="gradientbutton" id="gradient3">Gradient 3</button>
+        <button class="gradientbutton" id="gradient4">Gradient 4</button>
+      </div>
+
+      <div class="color-controller">
+        <button class="colorbuttons colorbutton1" id="setcolor1"><span></span></button>
+        <button class="colorbuttons colorbutton2" id="setcolor2"><span></span></button>
+        <button class="colorbuttons colorbutton3" id="setcolor3"><span></span></button>
+        <button class="colorbuttons colorbutton4" id="setcolor4"><span></span></button>
+        <button class="colorbuttons colorbutton5" id="setcolor5"><span></span></button>
+        <button class="colorbuttons colorbutton6" id="setcolor6"><span></span></button>
+        <button class="colorbuttons colorbutton7" id="setcolor7"><span></span></button>
+        <button class="colorbuttons colorbutton8" id="setcolor8"><span></span></button>
+      </div>
+
+      <div class="color-controller">
+
+      </div>
+
+      <div class="color-controller">
+
+      </div>
     </div>
-  <script type="application/javascript" src="audio_movement.js"></script>
+
+
+
+    <div class="reset-container">
+      <button class="reset" id="reset">Reset</button>
+    <div>
+  <script type="application/javascript" src="bundle.js"></script>
 </div>

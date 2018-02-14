@@ -1,0 +1,80 @@
+.color-controller-container {
+  width: 100vw;
+  text-align: center;
+}
+
+.color-controller{
+  display: flex;
+  justify-content: center;
+}
+
+.colorbuttons {
+  position: relative;
+  width: 25px;
+  height: 14.43px;
+  background: black;
+  margin: 7.22px 0;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.colorbuttons:before, .colorbuttons:after{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 17.68px;
+  height: 17.68px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 3.6612px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.colorbuttons:before {
+  top: -8.8388px;
+}
+
+.colorbuttons:after {
+  bottom: -8.8388px;
+}
+
+.colorbuttons span {
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 0;
+  width:25px;
+  height:14.4338px;
+  z-index: 2;
+  background: inherit;
+}
+
+.selected {
+  background: blue;
+  border: none;
+}
+
+
+
+/* individual color buttons */
+
+.colorbutton1 {
+  background: #FFD1DB;
+  border: none;
+}
+
+.colorbutton2 {
+  background: #649976;
+  border: none;
+}
+
+.colorbutton3 {
+  background: #E380FF;
+  border: none;
+}
+
+.colorbutton4 {
+  background: #761FCC;
+  border: none;
+}

@@ -1,3 +1,5 @@
+import { COLORS } from './color_controller';
+
 window.onload = function() {
 
   let file = document.getElementById("thefile");
@@ -33,41 +35,6 @@ window.onload = function() {
   let barHeight;
   let x = 0;
 
-
-  let reset = document.getElementById("reset");
-  let setcolor1 = document.getElementById("setcolor1");
-  let setcolor2 = document.getElementById("setcolor2");
-  let setcolor3 = document.getElementById("setcolor3");
-  let setcolor4 = document.getElementById("setcolor4");
-
-  let color1 = "black";
-  let color2 = "black";
-  let color3 = "black";
-  let color4 = "black";
-
-  setcolor1.addEventListener("click", function(){
-    color1 = "#FFEEFC";
-  });
-
-  setcolor2.addEventListener("click", function(){
-    color2 = "#B5FFE3";
-  });
-
-  setcolor3.addEventListener("click", function(){
-    color3 = "#FFD8B1";
-  });
-
-  setcolor4.addEventListener("click", function(){
-    color4 = "#C9DEFF";
-  });
-
-  reset.addEventListener("click", function(){
-    color1 = "black";
-    color2 = "black";
-    color3 = "black";
-    color4 = "black";
-  });
-
   function render(){
     requestAnimationFrame(render);
       x = 0;
@@ -83,20 +50,19 @@ window.onload = function() {
 
 
       let gradient = canvasCtx.createLinearGradient(0, 0, 3000, 0);
-      gradient.addColorStop(0, color1);
-      gradient.addColorStop(0.25, color2);
-      gradient.addColorStop(0.35, color3);
-      gradient.addColorStop(0.7, color4);
+      gradient.addColorStop(0, COLORS.color1);
+      gradient.addColorStop(0.23, COLORS.color2);
+      gradient.addColorStop(0.35, COLORS.color3);
+      gradient.addColorStop(0.6, COLORS.color4);
 
 
 
       canvasCtx.fillStyle = gradient;
-      canvasCtx.fillRect(x * 2, HEIGHT-barHeight, barWidth, barHeight);
+      canvasCtx.fillRect(x, HEIGHT-barHeight, barWidth, barHeight);
       canvasCtx.imageSmoothingEnabled = false;
 
-      canvasCtx.lineWidth = 10;
 
-      x += barWidth;
+      x += barWidth + 10;
     }
   }
   audio.play();
