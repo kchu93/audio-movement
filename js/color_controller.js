@@ -40,6 +40,7 @@ const COLORCHOICE = {
 let gradientnum = 1;
 let currentGradient = document.getElementById(`gradient${gradientnum}`);
 
+
 export const COLORS = {
   color1: "grey",
   color2: "grey",
@@ -47,7 +48,7 @@ export const COLORS = {
   color4: "grey"
 };
 
-let reset = document.getElementById("reset");
+let colorreset = document.getElementById("colorreset");
 let setcolor1 = document.getElementById("setcolor1");
 let setcolor2 = document.getElementById("setcolor2");
 let setcolor3 = document.getElementById("setcolor3");
@@ -85,6 +86,15 @@ let gradient1 = document.getElementById("gradient1");
 let gradient2 = document.getElementById("gradient2");
 let gradient3 = document.getElementById("gradient3");
 let gradient4 = document.getElementById("gradient4");
+
+
+colorreset.addEventListener("click", function(){
+  currentGradient.classList.remove("selected");
+  COLORS.color1 = "grey";
+  COLORS.color2 = "grey";
+  COLORS.color3 = "grey";
+  COLORS.color4 = "grey";
+});
 
 gradient1.addEventListener("click", function(){
   currentGradient.classList.remove("selected");

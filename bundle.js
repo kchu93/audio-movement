@@ -196,7 +196,7 @@ var COLORS = exports.COLORS = {
   color4: "grey"
 };
 
-var reset = document.getElementById("reset");
+var colorreset = document.getElementById("colorreset");
 var setcolor1 = document.getElementById("setcolor1");
 var setcolor2 = document.getElementById("setcolor2");
 var setcolor3 = document.getElementById("setcolor3");
@@ -234,6 +234,14 @@ var gradient1 = document.getElementById("gradient1");
 var gradient2 = document.getElementById("gradient2");
 var gradient3 = document.getElementById("gradient3");
 var gradient4 = document.getElementById("gradient4");
+
+colorreset.addEventListener("click", function () {
+  currentGradient.classList.remove("selected");
+  COLORS.color1 = "grey";
+  COLORS.color2 = "grey";
+  COLORS.color3 = "grey";
+  COLORS.color4 = "grey";
+});
 
 gradient1.addEventListener("click", function () {
   currentGradient.classList.remove("selected");
