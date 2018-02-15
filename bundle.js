@@ -115,23 +115,23 @@ window.onload = function () {
     analyser.getByteFrequencyData(dataArray);
 
     canvasCtx.clearRect(0, 0, WIDTH, HEIGHT);
-    canvasCtx.fillStyle = "black";
+    canvasCtx.fillStyle = "white";
     canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
     for (var i = 0; i < bufferLength; i++) {
-      barHeight = dataArray[i];
+      barHeight = dataArray[i] * 1.2;
 
-      var gradient = canvasCtx.createLinearGradient(0, 0, 3000, 0);
+      var gradient = canvasCtx.createLinearGradient(0, 0, 0, 2000);
       gradient.addColorStop(0, _color_controller.COLORS.color1);
-      gradient.addColorStop(0.23, _color_controller.COLORS.color2);
-      gradient.addColorStop(0.35, _color_controller.COLORS.color3);
-      gradient.addColorStop(0.6, _color_controller.COLORS.color4);
+      gradient.addColorStop(0.25, _color_controller.COLORS.color2);
+      gradient.addColorStop(0.5, _color_controller.COLORS.color3);
+      gradient.addColorStop(0.3, _color_controller.COLORS.color4);
 
       canvasCtx.fillStyle = gradient;
       canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
       canvasCtx.imageSmoothingEnabled = false;
 
-      x += barWidth;
+      x += barWidth + 8;
     }
   }
   audio.play();
@@ -190,10 +190,10 @@ var gradientnum = 1;
 var currentGradient = document.getElementById("gradient" + gradientnum);
 
 var COLORS = exports.COLORS = {
-  color1: "grey",
-  color2: "grey",
-  color3: "grey",
-  color4: "grey"
+  color1: "#FEF7F7",
+  color2: "#FEDBDB",
+  color3: "#FEB7B7",
+  color4: "#FEF7F7"
 };
 
 var colorreset = document.getElementById("colorreset");
@@ -237,10 +237,10 @@ var gradient4 = document.getElementById("gradient4");
 
 colorreset.addEventListener("click", function () {
   currentGradient.classList.remove("selected");
-  COLORS.color1 = "grey";
-  COLORS.color2 = "grey";
-  COLORS.color3 = "grey";
-  COLORS.color4 = "grey";
+  COLORS.color1 = "#FEF7F7";
+  COLORS.color2 = "#FEDBDB";
+  COLORS.color3 = "#FEB7B7";
+  COLORS.color4 = "#FEF7F7";
 });
 
 gradient1.addEventListener("click", function () {

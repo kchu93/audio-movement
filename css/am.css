@@ -1,19 +1,19 @@
 html, body {
   margin: 0;
-  font-family: arial, "Microsoft YaHei";
-  background: black;
-  color: #FEFEFE;
+  font-family: "Raleway";
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 20px;
+  background: white;
   display:flex;
   justify-content: center;
+  text-align: center;
 }
 
-#content {
-  background: black;
-}
-h1 {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+
+.audio-movement-header {
+  border-bottom: 2px solid #feb0b0;
+  color: black;
 }
 
 canvas {
@@ -41,7 +41,7 @@ canvas {
 
   letter-spacing: 0.1em;
   font-weight: bold;
-  color: #19c1aa;
+  color: #feb0b0;
   display: block;
   cursor: pointer;
   transition: transform .3s;

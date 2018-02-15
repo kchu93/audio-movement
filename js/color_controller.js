@@ -42,10 +42,10 @@ let currentGradient = document.getElementById(`gradient${gradientnum}`);
 
 
 export const COLORS = {
-  color1: "grey",
-  color2: "grey",
-  color3: "grey",
-  color4: "grey"
+  color1: "#FEF7F7",
+  color2: "#FEDBDB",
+  color3: "#FEB7B7",
+  color4: "#FEF7F7"
 };
 
 let colorreset = document.getElementById("colorreset");
@@ -90,10 +90,10 @@ let gradient4 = document.getElementById("gradient4");
 
 colorreset.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
-  COLORS.color1 = "grey";
-  COLORS.color2 = "grey";
-  COLORS.color3 = "grey";
-  COLORS.color4 = "grey";
+  COLORS.color1 = "#FEF7F7";
+  COLORS.color2 = "#FEDBDB";
+  COLORS.color3 = "#FEB7B7";
+  COLORS.color4 = "#FEF7F7";
 });
 
 gradient1.addEventListener("click", function(){

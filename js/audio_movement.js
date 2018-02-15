@@ -45,18 +45,18 @@ window.onload = function() {
     analyser.getByteFrequencyData(dataArray);
 
     canvasCtx.clearRect(0,0,WIDTH,HEIGHT);
-    canvasCtx.fillStyle = "black";
+    canvasCtx.fillStyle = "white";
     canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
     for (let i = 0; i < bufferLength; i ++) {
-      barHeight = dataArray[i];
+      barHeight = dataArray[i] * 1.2;
 
 
-      let gradient = canvasCtx.createLinearGradient(0, 0, 3000, 0);
+      let gradient = canvasCtx.createLinearGradient(0, 0, 0, 2000);
       gradient.addColorStop(0, COLORS.color1);
-      gradient.addColorStop(0.23, COLORS.color2);
-      gradient.addColorStop(0.35, COLORS.color3);
-      gradient.addColorStop(0.6, COLORS.color4);
+      gradient.addColorStop(0.25, COLORS.color2);
+      gradient.addColorStop(0.5, COLORS.color3);
+      gradient.addColorStop(0.3, COLORS.color4);
 
 
 
@@ -65,7 +65,7 @@ window.onload = function() {
       canvasCtx.imageSmoothingEnabled = false;
 
 
-      x += barWidth;
+      x += barWidth + 8;
     }
   }
   audio.play();
