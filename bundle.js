@@ -76,6 +76,8 @@ window.onload = function () {
 
   var file = document.getElementById("thefile");
   var audio = document.getElementById("audio");
+  audio.src = './test.mp3';
+  audio.crossOrigin = 'anonymous';
 
   file.onchange = function () {
     var files = this.files;

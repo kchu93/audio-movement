@@ -4,6 +4,9 @@ window.onload = function() {
 
   let file = document.getElementById("thefile");
   let audio = document.getElementById("audio");
+  audio.src = './test.mp3';
+  audio.crossOrigin = 'anonymous';
+
 
   file.onchange = function() {
     let files = this.files;
