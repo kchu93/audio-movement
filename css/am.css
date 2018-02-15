@@ -3,15 +3,18 @@ html, body {
   font-family: "Raleway";
   font-weight: bold;
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 18px;
   background: white;
-  display:flex;
-  justify-content: center;
   text-align: center;
 }
 
-
+.header-container{
+  display: flex;
+  justify-content: center;
+}
 .audio-movement-header {
+  width: 75vw;
+  padding-bottom: 4px;
   border-bottom: 2px solid #feb0b0;
   color: black;
 }
@@ -20,13 +23,17 @@ canvas {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 30vw;
+  height: 40vw;
 }
 
 .audio-and-file {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+
+.default-audio-player {
+  display: none;
 }
 
 #visualizer_wrapper{

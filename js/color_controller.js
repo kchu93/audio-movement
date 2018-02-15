@@ -36,17 +36,37 @@ const COLORCHOICE = {
   color32: "#8a6f30",
 };
 
+//Menu drop down
+let dropDownMenu = document.getElementById("drop-down-menu");
+let dropDownContent = document.getElementById("drop-down-content");
 
-let gradientnum = 1;
-let currentGradient = document.getElementById(`gradient${gradientnum}`);
+dropDownMenu.addEventListener("click", function(){
+  if (dropDownContent.classList.contains("drop-down-show")){
+    dropDownContent.classList.remove("drop-down-show");
+  } else {
+    dropDownContent.classList.add("drop-down-show");
+  }
+});
 
 
+
+
+
+// Color setter
 export const COLORS = {
   color1: "#FEF7F7",
   color2: "#FEDBDB",
   color3: "#FEB7B7",
   color4: "#FEF7F7"
 };
+
+let gradientnum = 1;
+let currentGradient = document.getElementById(`gradient${gradientnum}`);
+
+let gradient1 = document.getElementById("gradient1");
+let gradient2 = document.getElementById("gradient2");
+let gradient3 = document.getElementById("gradient3");
+let gradient4 = document.getElementById("gradient4");
 
 let colorreset = document.getElementById("colorreset");
 let setcolor1 = document.getElementById("setcolor1");
@@ -82,19 +102,6 @@ let setcolor30 = document.getElementById("setcolor30");
 let setcolor31 = document.getElementById("setcolor31");
 let setcolor32 = document.getElementById("setcolor32");
 
-let gradient1 = document.getElementById("gradient1");
-let gradient2 = document.getElementById("gradient2");
-let gradient3 = document.getElementById("gradient3");
-let gradient4 = document.getElementById("gradient4");
-
-
-colorreset.addEventListener("click", function(){
-  currentGradient.classList.remove("selected");
-  COLORS.color1 = "#FEF7F7";
-  COLORS.color2 = "#FEDBDB";
-  COLORS.color3 = "#FEB7B7";
-  COLORS.color4 = "#FEF7F7";
-});
 
 gradient1.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
@@ -120,6 +127,16 @@ gradient4.addEventListener("click", function(){
   currentGradient = document.getElementById(`gradient${gradientnum}`);
   currentGradient.classList.add("selected");
 });
+
+
+colorreset.addEventListener("click", function(){
+  currentGradient.classList.remove("selected");
+  COLORS.color1 = "#FEF7F7";
+  COLORS.color2 = "#FEDBDB";
+  COLORS.color3 = "#FEB7B7";
+  COLORS.color4 = "#FEF7F7";
+});
+
 
 setcolor1.addEventListener("click", function(){
   COLORS[`color${gradientnum}`] = COLORCHOICE.color1;

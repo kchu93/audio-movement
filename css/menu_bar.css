@@ -1,0 +1,23 @@
+.drop-down-menu {
+  padding: 10px;
+}
+
+.menu-bars-button{
+  background: none;
+  border: none;
+  position: relative;
+}
+
+.menu-bars-button {
+  font-size: 16px;
+}
+
+
+.drop-down-content {
+  display: none;
+  position: relative;
+}
+
+.drop-down-show {
+  display: block;
+}

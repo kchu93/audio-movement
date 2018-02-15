@@ -1,81 +1,90 @@
-<div class="content">
-  <link rel="stylesheet" href="./css/am.css">
-  <link rel="stylesheet" href="./css/color.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+<html>
+  <head>
+    <div class="content">
+      <link rel="stylesheet" href="./css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <div class="header-container">
-      <h1 class="audio-movement-header">AUDIO MOVEMENT</h1>
-      <p>
-        <span id="filename"><span>
-      </p>
-    </div>
 
-    <div>
-      <canvas id="canvas"></canvas>
-    </div>
+        <div class="header-container">
+          <h1 class="audio-movement-header">AUDIO MOVEMENT</h1>
+        </div>
+    <head>
 
-    <div class="audio-and-file">
-      <input type="file" class="thefile" id="thefile" accept="audio/*" />
-      <audio id="audio" controls></audio>
-    </div>
 
-    <div class="color-controller-container">
-      <div class="color-controller gradient-buttons">
-        <button class="gradientbutton" id="gradient1">Gradient 1</button>
-        <button class="gradientbutton" id="gradient2">Gradient 2</button>
-        <button class="gradientbutton" id="gradient3">Gradient 3</button>
-        <button class="gradientbutton" id="gradient4">Gradient 4</button>
+    <body>
+      <div>
+        <canvas id="canvas"></canvas>
       </div>
 
-      <div class="color-controller">
-        <button class="colorbuttons colorbutton1" id="setcolor1"><span></span></button>
-        <button class="colorbuttons colorbutton2" id="setcolor2"><span></span></button>
-        <button class="colorbuttons colorbutton3" id="setcolor3"><span></span></button>
-        <button class="colorbuttons colorbutton4" id="setcolor4"><span></span></button>
-        <button class="colorbuttons colorbutton5" id="setcolor5"><span></span></button>
-        <button class="colorbuttons colorbutton6" id="setcolor6"><span></span></button>
-        <button class="colorbuttons colorbutton7" id="setcolor7"><span></span></button>
-        <button class="colorbuttons colorbutton8" id="setcolor8"><span></span></button>
+      <div class="drop-down-menu" id="drop-down-menu">
+        <button class="menu-bars-button"><i class="fas fa-bars"></i></button>
       </div>
 
-      <div class="color-controller">
-        <button class="colorbuttons colorbutton9" id="setcolor9"><span></span></button>
-        <button class="colorbuttons colorbutton10" id="setcolor10"><span></span></button>
-        <button class="colorbuttons colorbutton11" id="setcolor11"><span></span></button>
-        <button class="colorbuttons colorbutton12" id="setcolor12"><span></span></button>
-        <button class="colorbuttons colorbutton13" id="setcolor13"><span></span></button>
-        <button class="colorbuttons colorbutton14" id="setcolor14"><span></span></button>
-        <button class="colorbuttons colorbutton15" id="setcolor15"><span></span></button>
-        <button class="colorbuttons colorbutton16" id="setcolor16"><span></span></button>
+      <menu class="drop-down-content" id="drop-down-content">
+        <div class="color-controller gradient-button-container">
+          <button class="gradientbutton" id="gradient1">Gradient 1</button>
+          <button class="gradientbutton" id="gradient2">Gradient 2</button>
+          <button class="gradientbutton" id="gradient3">Gradient 3</button>
+          <button class="gradientbutton" id="gradient4">Gradient 4</button>
+        </div>
+
+        <div class="color-controller-container">
+          <div class="color-controller">
+            <button class="colorbuttons colorbutton1" id="setcolor1"><span></span></button>
+            <button class="colorbuttons colorbutton2" id="setcolor2"><span></span></button>
+            <button class="colorbuttons colorbutton3" id="setcolor3"><span></span></button>
+            <button class="colorbuttons colorbutton4" id="setcolor4"><span></span></button>
+            <button class="colorbuttons colorbutton5" id="setcolor5"><span></span></button>
+            <button class="colorbuttons colorbutton6" id="setcolor6"><span></span></button>
+            <button class="colorbuttons colorbutton7" id="setcolor7"><span></span></button>
+            <button class="colorbuttons colorbutton8" id="setcolor8"><span></span></button>
+          </div>
+
+          <div class="color-controller">
+            <button class="colorbuttons colorbutton9" id="setcolor9"><span></span></button>
+            <button class="colorbuttons colorbutton10" id="setcolor10"><span></span></button>
+            <button class="colorbuttons colorbutton11" id="setcolor11"><span></span></button>
+            <button class="colorbuttons colorbutton12" id="setcolor12"><span></span></button>
+            <button class="colorbuttons colorbutton13" id="setcolor13"><span></span></button>
+            <button class="colorbuttons colorbutton14" id="setcolor14"><span></span></button>
+            <button class="colorbuttons colorbutton15" id="setcolor15"><span></span></button>
+            <button class="colorbuttons colorbutton16" id="setcolor16"><span></span></button>
+          </div>
+
+          <div class="color-controller">
+            <button class="colorbuttons colorbutton17" id="setcolor17"><span></span></button>
+            <button class="colorbuttons colorbutton18" id="setcolor18"><span></span></button>
+            <button class="colorbuttons colorbutton19" id="setcolor19"><span></span></button>
+            <button class="colorbuttons colorbutton20" id="setcolor20"><span></span></button>
+            <button class="colorbuttons colorbutton21" id="setcolor21"><span></span></button>
+            <button class="colorbuttons colorbutton22" id="setcolor22"><span></span></button>
+            <button class="colorbuttons colorbutton23" id="setcolor23"><span></span></button>
+            <button class="colorbuttons colorbutton24" id="setcolor24"><span></span></button>
+          </div>
+
+          <div class="color-controller">
+            <button class="colorbuttons colorbutton25" id="setcolor25"><span></span></button>
+            <button class="colorbuttons colorbutton26" id="setcolor26"><span></span></button>
+            <button class="colorbuttons colorbutton27" id="setcolor27"><span></span></button>
+            <button class="colorbuttons colorbutton28" id="setcolor28"><span></span></button>
+            <button class="colorbuttons colorbutton29" id="setcolor29"><span></span></button>
+            <button class="colorbuttons colorbutton30" id="setcolor30"><span></span></button>
+            <button class="colorbuttons colorbutton31" id="setcolor31"><span></span></button>
+            <button class="colorbuttons colorbutton32" id="setcolor32"><span></span></button>
+          </div>
+          <div class="reset-container">
+            <button class="colorreset" id="colorreset">Reset</button>
+          <div>
+        </div>
+      </menu>
+
+
+      <div class="audio-and-file">
+        <input type="file" class="thefile" id="thefile" accept="audio/*" />
+        <audio class="default-audio-player" id="audio" controls></audio>
       </div>
-
-      <div class="color-controller">
-        <button class="colorbuttons colorbutton17" id="setcolor17"><span></span></button>
-        <button class="colorbuttons colorbutton18" id="setcolor18"><span></span></button>
-        <button class="colorbuttons colorbutton19" id="setcolor19"><span></span></button>
-        <button class="colorbuttons colorbutton20" id="setcolor20"><span></span></button>
-        <button class="colorbuttons colorbutton21" id="setcolor21"><span></span></button>
-        <button class="colorbuttons colorbutton22" id="setcolor22"><span></span></button>
-        <button class="colorbuttons colorbutton23" id="setcolor23"><span></span></button>
-        <button class="colorbuttons colorbutton24" id="setcolor24"><span></span></button>
-      </div>
-
-      <div class="color-controller">
-        <button class="colorbuttons colorbutton25" id="setcolor25"><span></span></button>
-        <button class="colorbuttons colorbutton26" id="setcolor26"><span></span></button>
-        <button class="colorbuttons colorbutton27" id="setcolor27"><span></span></button>
-        <button class="colorbuttons colorbutton28" id="setcolor28"><span></span></button>
-        <button class="colorbuttons colorbutton29" id="setcolor29"><span></span></button>
-        <button class="colorbuttons colorbutton30" id="setcolor30"><span></span></button>
-        <button class="colorbuttons colorbutton31" id="setcolor31"><span></span></button>
-        <button class="colorbuttons colorbutton32" id="setcolor32"><span></span></button>
-      </div>
-    </div>
-
-
-
-    <div class="reset-container">
-      <button class="colorreset" id="colorreset">Reset</button>
-    <div>
-  <script type="application/javascript" src="bundle.js"></script>
-</div>
+    </body>
+    <script type="application/javascript" src="bundle.js"></script>
+  </div>
+</html>

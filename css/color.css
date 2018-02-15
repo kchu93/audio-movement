@@ -1,5 +1,7 @@
 .color-controller-container {
-  width: 100vw;
+  display: flex;
+  padding: 2px;
+  justify-content: center;
 }
 
 .color-controller{
@@ -7,11 +9,17 @@
   justify-content: center;
 }
 
+.gradient-button-container{
+  display: flex;
+  justify-content: center;
+}
+
 .gradientbutton {
   border: none;
   background: none;
-  color: white;
-  font-size: 12px;
+  color: black;
+  font-size: 14px;
+  font-family: "Raleway";
 }
 
 .colorbuttons {
@@ -22,8 +30,16 @@
 }
 
 .selected {
-  background: blue;
+  color: #feb0b0;
   border: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.colorreset {
+  background: none;
+  border: none;
+  padding-top: 4px;
 }
 
 

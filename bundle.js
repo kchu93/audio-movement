@@ -77,7 +77,8 @@ window.onload = function () {
   var file = document.getElementById("thefile");
   var audio = document.getElementById("audio");
   audio.src = './test.mp3';
-  audio.crossOrigin = 'anonymous';
+  // audio.crossOrigin = 'anonymous';
+
 
   file.onchange = function () {
     var files = this.files;
@@ -186,15 +187,33 @@ var COLORCHOICE = {
   color32: "#8a6f30"
 };
 
-var gradientnum = 1;
-var currentGradient = document.getElementById("gradient" + gradientnum);
+//Menu drop down
+var dropDownMenu = document.getElementById("drop-down-menu");
+var dropDownContent = document.getElementById("drop-down-content");
 
+dropDownMenu.addEventListener("click", function () {
+  if (dropDownContent.classList.contains("drop-down-show")) {
+    dropDownContent.classList.remove("drop-down-show");
+  } else {
+    dropDownContent.classList.add("drop-down-show");
+  }
+});
+
+// Color setter
 var COLORS = exports.COLORS = {
   color1: "#FEF7F7",
   color2: "#FEDBDB",
   color3: "#FEB7B7",
   color4: "#FEF7F7"
 };
+
+var gradientnum = 1;
+var currentGradient = document.getElementById("gradient" + gradientnum);
+
+var gradient1 = document.getElementById("gradient1");
+var gradient2 = document.getElementById("gradient2");
+var gradient3 = document.getElementById("gradient3");
+var gradient4 = document.getElementById("gradient4");
 
 var colorreset = document.getElementById("colorreset");
 var setcolor1 = document.getElementById("setcolor1");
@@ -230,19 +249,6 @@ var setcolor30 = document.getElementById("setcolor30");
 var setcolor31 = document.getElementById("setcolor31");
 var setcolor32 = document.getElementById("setcolor32");
 
-var gradient1 = document.getElementById("gradient1");
-var gradient2 = document.getElementById("gradient2");
-var gradient3 = document.getElementById("gradient3");
-var gradient4 = document.getElementById("gradient4");
-
-colorreset.addEventListener("click", function () {
-  currentGradient.classList.remove("selected");
-  COLORS.color1 = "#FEF7F7";
-  COLORS.color2 = "#FEDBDB";
-  COLORS.color3 = "#FEB7B7";
-  COLORS.color4 = "#FEF7F7";
-});
-
 gradient1.addEventListener("click", function () {
   currentGradient.classList.remove("selected");
   gradientnum = 1;
@@ -266,6 +272,14 @@ gradient4.addEventListener("click", function () {
   gradientnum = 4;
   currentGradient = document.getElementById("gradient" + gradientnum);
   currentGradient.classList.add("selected");
+});
+
+colorreset.addEventListener("click", function () {
+  currentGradient.classList.remove("selected");
+  COLORS.color1 = "#FEF7F7";
+  COLORS.color2 = "#FEDBDB";
+  COLORS.color3 = "#FEB7B7";
+  COLORS.color4 = "#FEF7F7";
 });
 
 setcolor1.addEventListener("click", function () {
