@@ -1,39 +1,48 @@
 const COLORCHOICE = {
-  color1: "#212021",
-  color2: "#222034",
-  color3: "#45283c",
-  color4: "#663931",
-  color5: "#8f563b",
-  color6: "#df7126",
-  color7: "#d9a066",
-  color8: "#eec39a",
+  color1: "#F4F6F7",
+  color2: "#ECF0F1",
+  color3: "#D98880",
+  color4: "#C0392B",
+  color5: "#FECCCC",
+  color6: "#feb0b0",
+  color7: "#C39BD3",
+  color8: "#9B59B6",
 
-  color9: "#fbf236",
-  color10: "#99e550",
-  color11: "#6abe30",
-  color12: "#37946e",
-  color13: "#4b692f",
-  color14: "#524b24",
-  color15: "#323c39",
-  color16: "#3f3f74",
+  color9: "#BB8FCE",
+  color10: "#8E44AD",
+  color11: "#7FB3D5",
+  color12: "#2980B9",
+  color13: "#85C1E9",
+  color14: "#3498DB",
+  color15: "#76D7C4",
+  color16: "#1ABC9C",
 
-  color17: "#306082",
-  color18: "#5b6ee1",
-  color19: "#639bff",
-  color20: "#5fcde4",
-  color21: "#cbdbfc",
-  color22: "#ffffff",
-  color23: "#9badb7",
-  color24: "#847e87",
+  color17: "#73C6B6",
+  color18: "#16A085",
+  color19: "#7DCEA0",
+  color20: "#27AE60",
+  color21: "#82E0AA",
+  color22: "#2ECC71",
+  color23: "#F7DC6F",
+  color24: "#F1C40F",
 
-  color25: "#696a6a",
-  color26: "#595652",
-  color27: "#76428a",
-  color28: "#ac3232",
-  color29: "#d95763",
-  color30: "#d77bba",
-  color31: "#8f974a",
-  color32: "#8a6f30",
+  color25: "#F8C471",
+  color26: "#F39C12",
+  color27: "#F0B27A",
+  color28: "#E67E22",
+  color29: "#E59866",
+  color30: "#D35400",
+  color31: "#D7DBDD",
+  color32: "#BDC3C7",
+
+  color33: "#BFC9CA",
+  color34: "#95A5A6",
+  color35: "#B2BABB",
+  color36: "#7F8C8D",
+  color37: "#85929E",
+  color38: "#34495E",
+  color39: "#212F3D",
+  color40: "#17202A",
 };
 
 //Menu drop down
@@ -47,9 +56,6 @@ dropDownMenu.addEventListener("click", function(){
     dropDownContent.classList.add("drop-down-show");
   }
 });
-
-
-
 
 
 // Color setter
@@ -67,6 +73,7 @@ let gradient1 = document.getElementById("gradient1");
 let gradient2 = document.getElementById("gradient2");
 let gradient3 = document.getElementById("gradient3");
 let gradient4 = document.getElementById("gradient4");
+let gradientAll = document.getElementById("gradientAll");
 
 let colorreset = document.getElementById("colorreset");
 let setcolor1 = document.getElementById("setcolor1");
@@ -101,6 +108,14 @@ let setcolor29 = document.getElementById("setcolor29");
 let setcolor30 = document.getElementById("setcolor30");
 let setcolor31 = document.getElementById("setcolor31");
 let setcolor32 = document.getElementById("setcolor32");
+let setcolor33 = document.getElementById("setcolor33");
+let setcolor34 = document.getElementById("setcolor34");
+let setcolor35 = document.getElementById("setcolor35");
+let setcolor36 = document.getElementById("setcolor36");
+let setcolor37 = document.getElementById("setcolor37");
+let setcolor38 = document.getElementById("setcolor38");
+let setcolor39 = document.getElementById("setcolor39");
+let setcolor40 = document.getElementById("setcolor40");
 
 
 gradient1.addEventListener("click", function(){
@@ -266,4 +281,36 @@ setcolor31.addEventListener("click", function(){
 
 setcolor32.addEventListener("click", function(){
   COLORS[`color${gradientnum}`] = COLORCHOICE.color32;
+});
+
+setcolor33.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color33;
+});
+
+setcolor34.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color34;
+});
+
+setcolor35.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color35;
+});
+
+setcolor36.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color36;
+});
+
+setcolor37.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color37;
+});
+
+setcolor38.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color38;
+});
+
+setcolor39.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color39;
+});
+
+setcolor40.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color40;
 });

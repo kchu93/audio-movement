@@ -1,5 +1,7 @@
 .drop-down-menu {
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .menu-bars-button{
@@ -16,6 +18,7 @@
 .drop-down-content {
   display: none;
   position: relative;
+  line-height: 1.2;
 }
 
 .drop-down-show {

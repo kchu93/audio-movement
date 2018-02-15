@@ -9,6 +9,12 @@
   justify-content: center;
 }
 
+.color-controller button{
+  display: flex;
+  justify-content: center;
+}
+
+
 .gradient-button-container{
   display: flex;
   justify-content: center;
@@ -18,13 +24,20 @@
   border: none;
   background: none;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-family: "Raleway";
+  letter-spacing: 1px;
+}
+
+.gradientbutton:hover {
+  color: #feb0b0;
 }
 
 .colorbuttons {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.1vw;
+  height: 1.1vw;
   border-radius: 50%;
   margin: 2px;
 }
@@ -39,154 +52,208 @@
 .colorreset {
   background: none;
   border: none;
-  padding-top: 4px;
+  padding-top: 2px;
 }
 
 
 /* individual color buttons */
-
 .colorbutton1 {
-  background: #212021;
+  background: #F4F6F7;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
 .colorbutton2 {
-  background: #222034;
+  background: #ECF0F1;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
 .colorbutton3 {
-  background: #45283c;
+  background: #D98880;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
 .colorbutton4 {
-  background: #663931;
+  background: #C0392B;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
 .colorbutton5 {
-  background: #8f563b;
+  background: #FECCCC;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
 .colorbutton6 {
-  background: #df7126;
+  background: #feb0b0;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
 .colorbutton7 {
-  background: #d9a066;
+  background: #C39BD3;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
 .colorbutton8 {
-  background: #eec39a;
+  background: #9B59B6;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
-
-/* individual color buttons */
-
 .colorbutton9 {
-  background: #fbf236;
+  background: #BB8FCE;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton10 {
-  background: #99e550;
+  background: #8E44AD;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton11 {
-  background: #6abe30;
+  background: #7FB3D5;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton12 {
-  background: #37946e;
+  background: #2980B9;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton13 {
-  background: #4b692f;
+  background: #85C1E9;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton14 {
-  background: #524b24;
+  background: #3498DB;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton15 {
-  background: #323c39;
+  background: #76D7C4;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton16 {
-  background: #3f3f74;
+  background: #1ABC9C;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
-/* individual color buttons */
 .colorbutton17 {
-  background: #306082;
+  background: #73C6B6;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton18 {
-  background: #5b6ee1;
+  background: #16A085;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton19 {
-  background: #639bff;
+  background: #7DCEA0;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton20 {
-  background: #5fcde4;
+  background: #27AE60;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton21 {
-  background: #cbdbfc;
+  background: #82E0AA;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton22 {
-  background: #ffffff;
+  background: #2ECC71;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton23 {
-  background: #9badb7;
+  background: #F7DC6F;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton24 {
-  background: #847e87;
+  background: #F1C40F;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
-
-/* individual color buttons */
-
-
 .colorbutton25 {
-  background: #696a6a;
+  background: #F8C471;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton26 {
-  background: #595652;
+  background: #F39C12;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton27 {
-  background: #76428a;
+  background: #F0B27A;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton28 {
-  background: #ac3232;
+  background: #E67E22;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton29 {
-  background: #d95763;
+  background: #E59866;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton30 {
-  background: #d77bba;
+  background: #D35400;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton31 {
-  background: #8f974a;
+  background: #D7DBDD;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .colorbutton32 {
-  background: #8f974a;
+  background: #BDC3C7;
   border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton33 {
+  background: #BFC9CA;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton34 {
+  background: #95A5A6;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton35 {
+  background: #B2BABB;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton36 {
+  background: #7F8C8D;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton37 {
+  background: #85929E;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton38 {
+  background: #34495E;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton39 {
+  background: #212F3D;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.colorbutton40 {
+  background: #17202A;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }

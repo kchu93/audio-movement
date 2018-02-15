@@ -1,9 +1,8 @@
-html, body {
+html {
   margin: 0;
   font-family: "Raleway";
   font-weight: bold;
   letter-spacing: 3px;
-  font-size: 18px;
   background: white;
   text-align: center;
 }
@@ -11,10 +10,13 @@ html, body {
 .header-container{
   display: flex;
   justify-content: center;
+  padding: 7px;
 }
+
 .audio-movement-header {
   width: 75vw;
-  padding-bottom: 4px;
+  font-size: 20px;
+  padding: 7px;
   border-bottom: 2px solid #feb0b0;
   color: black;
 }
@@ -23,7 +25,7 @@ canvas {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 40vw;
+  height: 38vw;
 }
 
 .audio-and-file {
