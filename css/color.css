@@ -1,6 +1,5 @@
 .color-controller-container {
   width: 100vw;
-  text-align: center;
 }
 
 .color-controller{
@@ -8,46 +7,17 @@
   justify-content: center;
 }
 
+.gradientbutton {
+  border: none;
+  background: none;
+  color: white;
+}
+
 .colorbuttons {
-  position: relative;
-  width: 25px;
-  height: 14.43px;
-  background: black;
-  margin: 7.22px 0;
-  box-shadow: 0 0 3px rgba(0,0,0,0.1);
-}
-
-.colorbuttons:before, .colorbuttons:after{
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 17.68px;
-  height: 17.68px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 3.6612px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.1);
-}
-
-.colorbuttons:before {
-  top: -8.8388px;
-}
-
-.colorbuttons:after {
-  bottom: -8.8388px;
-}
-
-.colorbuttons span {
-  display: block;
-  position: absolute;
-  top:0px;
-  left: 0;
-  width:25px;
-  height:14.4338px;
-  z-index: 2;
-  background: inherit;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+  margin: 2px;
 }
 
 .selected {
@@ -56,25 +26,150 @@
 }
 
 
-
 /* individual color buttons */
 
 .colorbutton1 {
-  background: #FFD1DB;
+  background: #212021;
   border: none;
 }
 
 .colorbutton2 {
-  background: #649976;
+  background: #222034;
   border: none;
 }
 
 .colorbutton3 {
-  background: #E380FF;
+  background: #45283c;
   border: none;
 }
 
 .colorbutton4 {
-  background: #761FCC;
+  background: #663931;
+  border: none;
+}
+
+.colorbutton5 {
+  background: #8f563b;
+  border: none;
+}
+
+.colorbutton6 {
+  background: #df7126;
+  border: none;
+}
+
+.colorbutton7 {
+  background: #d9a066;
+  border: none;
+}
+
+.colorbutton8 {
+  background: #eec39a;
+  border: none;
+}
+
+
+/* individual color buttons */
+
+.colorbutton9 {
+  background: #fbf236;
+  border: none;
+}
+.colorbutton10 {
+  background: #99e550;
+  border: none;
+}
+.colorbutton11 {
+  background: #6abe30;
+  border: none;
+}
+.colorbutton12 {
+  background: #37946e;
+  border: none;
+}
+.colorbutton13 {
+  background: #4b692f;
+  border: none;
+}
+.colorbutton14 {
+  background: #524b24;
+  border: none;
+}
+.colorbutton15 {
+  background: #323c39;
+  border: none;
+}
+.colorbutton16 {
+  background: #3f3f74;
+  border: none;
+}
+
+/* individual color buttons */
+.colorbutton17 {
+  background: #306082;
+  border: none;
+}
+.colorbutton18 {
+  background: #5b6ee1;
+  border: none;
+}
+.colorbutton19 {
+  background: #639bff;
+  border: none;
+}
+.colorbutton20 {
+  background: #5fcde4;
+  border: none;
+}
+.colorbutton21 {
+  background: #cbdbfc;
+  border: none;
+}
+.colorbutton22 {
+  background: #ffffff;
+  border: none;
+}
+.colorbutton23 {
+  background: #9badb7;
+  border: none;
+}
+.colorbutton24 {
+  background: #847e87;
+  border: none;
+}
+
+/* individual color buttons */
+
+
+.colorbutton25 {
+  background: #696a6a;
+  border: none;
+}
+.colorbutton26 {
+  background: #595652;
+  border: none;
+}
+.colorbutton27 {
+  background: #76428a;
+  border: none;
+}
+.colorbutton28 {
+  background: #ac3232;
+  border: none;
+}
+.colorbutton29 {
+  background: #d95763;
+  border: none;
+}
+.colorbutton30 {
+  background: #d77bba;
+  border: none;
+}
+.colorbutton31 {
+  background: #8f974a;
+  border: none;
+}
+.colorbutton32 {
+  background: #8f974a;
   border: none;
 }

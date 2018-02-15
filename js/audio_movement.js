@@ -19,11 +19,11 @@ window.onload = function() {
 
   source.connect(analyser);
   analyser.connect(audioCtx.destination);
-  analyser.fftsize = 256;
+  analyser.fftsize = 2048;
 
   let bufferLength = analyser.frequencyBinCount;
   console.log(bufferLength);
-  let dataArray = new Uint8Array(128);
+  let dataArray = new Uint8Array(256);
 
   let canvas = document.getElementById("canvas");
   let canvasCtx = canvas.getContext("2d");
@@ -46,7 +46,7 @@ window.onload = function() {
     canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
     for (let i = 0; i < bufferLength; i ++) {
-      barHeight = dataArray[i] * 1.5;
+      barHeight = dataArray[i];
 
 
       let gradient = canvasCtx.createLinearGradient(0, 0, 3000, 0);
@@ -62,7 +62,7 @@ window.onload = function() {
       canvasCtx.imageSmoothingEnabled = false;
 
 
-      x += barWidth + 10;
+      x += barWidth;
     }
   }
   audio.play();
