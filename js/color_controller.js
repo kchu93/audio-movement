@@ -143,6 +143,11 @@ gradient4.addEventListener("click", function(){
   currentGradient.classList.add("selected");
 });
 
+gradientAll.addEventListener("click", function(){
+  currentGradient.classList.remove("selected");
+  gradientnum = 5;
+});
+
 
 colorreset.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
@@ -153,164 +158,178 @@ colorreset.addEventListener("click", function(){
 });
 
 
+function setColor(color){
+  console.log(gradientnum);
+  console.log(color);
+  if (gradientnum === 5){
+    COLORS['color1'] = color;
+    COLORS['color2'] = color;
+    COLORS['color3'] = color;
+    COLORS['color4'] = color;
+  } else {
+  COLORS[`color${gradientnum}`] = color;
+  }
+}
+
+
 setcolor1.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color1;
+  setColor(COLORCHOICE.color1);
 });
 
 setcolor2.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color2;
+  setColor(COLORCHOICE.color2);
 });
 
 setcolor3.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color3;
+  setColor(COLORCHOICE.color3);
 });
 
 setcolor4.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color4;
+  setColor(COLORCHOICE.color4);
 });
 
 setcolor5.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color5;
+  setColor(COLORCHOICE.color5);
 });
 
 setcolor6.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color6;
+  setColor(COLORCHOICE.color6);
 });
 
 setcolor7.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color7;
+  setColor(COLORCHOICE.color7);
 });
 
 setcolor8.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color8;
+  setColor(COLORCHOICE.color8);
 });
 
 setcolor9.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color9;
+  setColor(COLORCHOICE.color9);
 });
 
 setcolor10.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color10;
+  setColor(COLORCHOICE.color10);
 });
 
 setcolor11.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color11;
+  setColor(COLORCHOICE.color11);
 });
 
 setcolor12.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color12;
+  setColor(COLORCHOICE.color12);
 });
 
 setcolor13.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color13;
+  setColor(COLORCHOICE.color13);
 });
 
 setcolor14.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color14;
+  setColor(COLORCHOICE.color14);
 });
 
 setcolor15.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color15;
+  setColor(COLORCHOICE.color15);
 });
 
 setcolor16.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color16;
+  setColor(COLORCHOICE.color16);
 });
 
 
 
 setcolor17.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color17;
+  setColor(COLORCHOICE.color17);
 });
 
 setcolor18.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color18;
+  setColor(COLORCHOICE.color18);
 });
 
 setcolor19.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color19;
+  setColor(COLORCHOICE.color19);
 });
 
 setcolor20.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color20;
+  setColor(COLORCHOICE.color20);
 });
 
 setcolor21.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color21;
+  setColor(COLORCHOICE.color21);
 });
 
 setcolor22.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color22;
+  setColor(COLORCHOICE.color22);
 });
 
 setcolor23.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color23;
+  setColor(COLORCHOICE.color23);
 });
 
 setcolor24.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color24;
+  setColor(COLORCHOICE.color24);
 });
 
 setcolor25.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color25;
+  setColor(COLORCHOICE.color25);
 });
 
 setcolor26.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color26;
+  setColor(COLORCHOICE.color26);
 });
 
 setcolor27.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color27;
+  setColor(COLORCHOICE.color27);
 });
 
 setcolor28.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color28;
+  setColor(COLORCHOICE.color28);
 });
 
 setcolor29.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color29;
+  setColor(COLORCHOICE.color29);
 });
 
 setcolor30.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color30;
+  setColor(COLORCHOICE.color30);
 });
 
 setcolor31.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color31;
+  setColor(COLORCHOICE.color31);
 });
 
 setcolor32.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color32;
+  setColor(COLORCHOICE.color32);
 });
 
 setcolor33.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color33;
+  setColor(COLORCHOICE.color33);
 });
 
 setcolor34.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color34;
+  setColor(COLORCHOICE.color34);
 });
 
 setcolor35.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color35;
+  setColor(COLORCHOICE.color35);
 });
 
 setcolor36.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color36;
+  setColor(COLORCHOICE.color36);
 });
 
 setcolor37.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color37;
+  setColor(COLORCHOICE.color37);
 });
 
 setcolor38.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color38;
+  setColor(COLORCHOICE.color38);
 });
 
 setcolor39.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color39;
+  setColor(COLORCHOICE.color39);
 });
 
 setcolor40.addEventListener("click", function(){
-  COLORS[`color${gradientnum}`] = COLORCHOICE.color40;
+  setColor(COLORCHOICE.color40);
 });
