@@ -73,6 +73,13 @@ let setcolor22 = document.getElementById("setcolor22");
 let setcolor23 = document.getElementById("setcolor23");
 let setcolor24 = document.getElementById("setcolor24");
 let setcolor25 = document.getElementById("setcolor25");
+let setcolor26 = document.getElementById("setcolor26");
+let setcolor27 = document.getElementById("setcolor27");
+let setcolor28 = document.getElementById("setcolor28");
+let setcolor29 = document.getElementById("setcolor29");
+let setcolor30 = document.getElementById("setcolor30");
+let setcolor31 = document.getElementById("setcolor31");
+let setcolor32 = document.getElementById("setcolor32");
 
 let gradient1 = document.getElementById("gradient1");
 let gradient2 = document.getElementById("gradient2");
@@ -166,4 +173,70 @@ setcolor15.addEventListener("click", function(){
 
 setcolor16.addEventListener("click", function(){
   COLORS[`color${gradientnum}`] = COLORCHOICE.color16;
+});
+
+
+
+setcolor17.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color17;
+});
+
+setcolor18.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color18;
+});
+
+setcolor19.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color19;
+});
+
+setcolor20.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color20;
+});
+
+setcolor21.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color21;
+});
+
+setcolor22.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color22;
+});
+
+setcolor23.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color23;
+});
+
+setcolor24.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color24;
+});
+
+setcolor25.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color25;
+});
+
+setcolor26.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color26;
+});
+
+setcolor27.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color27;
+});
+
+setcolor28.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color28;
+});
+
+setcolor29.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color29;
+});
+
+setcolor30.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color30;
+});
+
+setcolor31.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color31;
+});
+
+setcolor32.addEventListener("click", function(){
+  COLORS[`color${gradientnum}`] = COLORCHOICE.color32;
 });

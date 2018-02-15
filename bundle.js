@@ -220,6 +220,13 @@ var setcolor22 = document.getElementById("setcolor22");
 var setcolor23 = document.getElementById("setcolor23");
 var setcolor24 = document.getElementById("setcolor24");
 var setcolor25 = document.getElementById("setcolor25");
+var setcolor26 = document.getElementById("setcolor26");
+var setcolor27 = document.getElementById("setcolor27");
+var setcolor28 = document.getElementById("setcolor28");
+var setcolor29 = document.getElementById("setcolor29");
+var setcolor30 = document.getElementById("setcolor30");
+var setcolor31 = document.getElementById("setcolor31");
+var setcolor32 = document.getElementById("setcolor32");
 
 var gradient1 = document.getElementById("gradient1");
 var gradient2 = document.getElementById("gradient2");
@@ -313,6 +320,70 @@ setcolor15.addEventListener("click", function () {
 
 setcolor16.addEventListener("click", function () {
   COLORS["color" + gradientnum] = COLORCHOICE.color16;
+});
+
+setcolor17.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color17;
+});
+
+setcolor18.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color18;
+});
+
+setcolor19.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color19;
+});
+
+setcolor20.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color20;
+});
+
+setcolor21.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color21;
+});
+
+setcolor22.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color22;
+});
+
+setcolor23.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color23;
+});
+
+setcolor24.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color24;
+});
+
+setcolor25.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color25;
+});
+
+setcolor26.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color26;
+});
+
+setcolor27.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color27;
+});
+
+setcolor28.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color28;
+});
+
+setcolor29.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color29;
+});
+
+setcolor30.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color30;
+});
+
+setcolor31.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color31;
+});
+
+setcolor32.addEventListener("click", function () {
+  COLORS["color" + gradientnum] = COLORCHOICE.color32;
 });
 
 /***/ })
