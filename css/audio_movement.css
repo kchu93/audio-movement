@@ -66,11 +66,13 @@ canvas {
 progress{
   margin-top: 2px;
   margin-left: 5px;
-  background: white;
+  background-color: white;
+  border-radius: 5px;
 }
 
 progress::-webkit-progress-value{
   background: #feb0b0;
+  opacity: .9;
 }
 
 footer {
