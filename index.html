@@ -76,7 +76,7 @@
           </div>
 
           <div class="gradient-controller-container">
-            <input class="slider" value="10" min="1" max="100" id="adjust-visual-height" type="range">
+            <input class="slider" value="30" min="1" max="100" id="adjust-visual-height" type="range">
             <input class="slider" value="50" min="1" max="100" id="adjust-visual-width" type="range">
           </div>
       </menu>
@@ -89,6 +89,7 @@
         <button class="volume-button" id="volume-down-button"><i class="fas fa-minus"></i></button>
         <button class="volume-button" id="volume-up-button"><i class="fas fa-plus"></i></button>
         <progress class="seekbar" id="seekbar" value="0" max="1" style="width:200px;"></progress>
+        <div class="seekbar" role="presentation"><span></div>
       </div>
 
       <audio ontimeupdate="updateProgress()" class="default-audio-player" id="audio" controls></audio>
@@ -96,8 +97,8 @@
 
     <footer>
       <div class="foot-container">
-        <a target="_blank" href="https://github.com/kevinchu676"><i class="fab fa-github"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/kevinchu1/"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/kevinchu676"><i class="fab fa-github social-link"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/kevinchu1/"><i class="fab fa-linkedin social-link"></i></a>
     </footer>
       <div class="created-by-text-container">
         <p class="create-by-text">CREATED BY

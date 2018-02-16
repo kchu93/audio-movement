@@ -115,7 +115,7 @@ window.onload = function () {
 
   var visualHeight = document.getElementById("adjust-visual-height");
   var visualWidth = document.getElementById("adjust-visual-width");
-  var barHeightModifier = visualHeight.value / 20;
+  var barHeightModifier = visualHeight.value / 50;
   var barWidthModifier = visualWidth.value / 20;
 
   visualHeight.addEventListener("input", function () {
@@ -132,10 +132,10 @@ window.onload = function () {
 
   source.connect(analyser);
   analyser.connect(audioCtx.destination);
-  analyser.fftsize = 2048;
+  analyser.fftsize = 256;
 
   var bufferLength = analyser.frequencyBinCount;
-  var dataArray = new Uint8Array(1024);
+  var dataArray = new Uint8Array(256);
 
   var canvas = document.getElementById("canvas");
   var canvasCtx = canvas.getContext("2d");
@@ -160,11 +160,11 @@ window.onload = function () {
     for (var i = 0; i < bufferLength; i++) {
       barHeight = dataArray[i] * barHeightModifier;
 
-      var gradient = canvasCtx.createLinearGradient(0, 0, 0, 2000);
-      gradient.addColorStop(0, _color_controller.COLORS.color1);
-      gradient.addColorStop(0.25, _color_controller.COLORS.color2);
-      gradient.addColorStop(0.5, _color_controller.COLORS.color3);
-      gradient.addColorStop(0.3, _color_controller.COLORS.color4);
+      var gradient = canvasCtx.createLinearGradient(0, 0, 4000, 0);
+      gradient.addColorStop(0.06, _color_controller.COLORS.color1);
+      gradient.addColorStop(0.15, _color_controller.COLORS.color2);
+      gradient.addColorStop(0.28, _color_controller.COLORS.color3);
+      gradient.addColorStop(0.4, _color_controller.COLORS.color4);
 
       canvasCtx.fillStyle = gradient;
       canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
