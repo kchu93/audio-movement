@@ -17,6 +17,9 @@ window.onload = function() {
 
   let playButton = document.getElementById("play-button");
   let pauseButton = document.getElementById("pause-button");
+  let progressBar = document.getElementById("seekbar");
+  let volumeDown = document.getElementById("volume-down-button");
+  let volumeUp = document.getElementById("volume-up-button");
 
   playButton.addEventListener("click", function(){
     audio.play();
@@ -26,11 +29,23 @@ window.onload = function() {
     audio.pause();
   });
 
+  volumeDown.addEventListener("click", function(){
+    audio.volume -= .1;
+  });
+
+  volumeUp.addEventListener("click", function(){
+    audio.volume += .1;
+  });
+
+
+
+
   audio.ontimeupdate = function updateProgress() {
     let player = document.getElementById("audio");
-    let progressBar = document.getElementById("seekbar");
     progressBar.value = (player.currentTime / player.duration);
   };
+
+
 
   let audioCtx = new AudioContext();
   let source = audioCtx.createMediaElementSource(audio);
@@ -65,7 +80,7 @@ window.onload = function() {
     canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
     for (let i = 0; i < bufferLength; i ++) {
-      barHeight = dataArray[i] * 1.2;
+      barHeight = dataArray[i];
 
 
       let gradient = canvasCtx.createLinearGradient(0, 0, 0, 2000);
@@ -81,7 +96,7 @@ window.onload = function() {
       canvasCtx.imageSmoothingEnabled = false;
 
 
-      x += barWidth + 8;
+      x += barWidth + 5;
     }
   }
   audio.pause();

@@ -5,6 +5,7 @@ html {
   letter-spacing: 3px;
   background: white;
   text-align: center;
+  padding-top: 5px;
 }
 
 .header-container{
@@ -16,7 +17,7 @@ html {
 .audio-movement-header {
   width: 75vw;
   font-size: 22px;
-  padding: 7px;
+  padding: 10px;
   border-bottom: 2px solid #feb0b0;
   color: black;
 }
@@ -31,7 +32,7 @@ canvas {
 .audio-file {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .default-audio-player {
@@ -52,14 +53,16 @@ canvas {
   width: 15%;
 }
 
-.play-button, .pause-button {
+.play-button, .pause-button, .volume-button {
   background: none;
   border: none;
+  font-size: 12px;
 }
 
-.play-button:hover, .pause-button:hover {
+.play-button:hover, .pause-button:hover, .volume-button:hover {
   color: #feb0b0;
 }
+
 
 progress{
   margin-top: 2px;
@@ -68,4 +71,8 @@ progress{
 
 progress::-moz-progress-bar{
   background-color: red !important;
+}
+
+input[type=range]{
+  transform: rotate(270deg);
 }

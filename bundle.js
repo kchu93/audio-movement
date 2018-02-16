@@ -88,6 +88,9 @@ window.onload = function () {
 
   var playButton = document.getElementById("play-button");
   var pauseButton = document.getElementById("pause-button");
+  var progressBar = document.getElementById("seekbar");
+  var volumeDown = document.getElementById("volume-down-button");
+  var volumeUp = document.getElementById("volume-up-button");
 
   playButton.addEventListener("click", function () {
     audio.play();
@@ -97,9 +100,16 @@ window.onload = function () {
     audio.pause();
   });
 
+  volumeDown.addEventListener("click", function () {
+    audio.volume -= .1;
+  });
+
+  volumeUp.addEventListener("click", function () {
+    audio.volume += .1;
+  });
+
   audio.ontimeupdate = function updateProgress() {
     var player = document.getElementById("audio");
-    var progressBar = document.getElementById("seekbar");
     progressBar.value = player.currentTime / player.duration;
   };
 
@@ -136,7 +146,7 @@ window.onload = function () {
     canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
     for (var i = 0; i < bufferLength; i++) {
-      barHeight = dataArray[i] * 1.2;
+      barHeight = dataArray[i];
 
       var gradient = canvasCtx.createLinearGradient(0, 0, 0, 2000);
       gradient.addColorStop(0, _color_controller.COLORS.color1);
@@ -148,7 +158,7 @@ window.onload = function () {
       canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
       canvasCtx.imageSmoothingEnabled = false;
 
-      x += barWidth + 8;
+      x += barWidth + 5;
     }
   }
   audio.pause();
