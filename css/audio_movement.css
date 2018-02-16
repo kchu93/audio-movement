@@ -6,7 +6,14 @@ html {
   background: white;
   text-align: center;
   padding-top: 5px;
+  animation: fadeinleft 2s ease-in;
 }
+
+@keyframes fadeinleft {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 .header-container{
   display: flex;
@@ -16,10 +23,13 @@ html {
 
 .audio-movement-header {
   width: 75vw;
-  font-size: 22px;
+  font-size: 24px;
   padding: 10px;
   border-bottom: 2px solid #feb0b0;
   color: black;
+  position: relative;
+  line-height: 1em;
+  overflow: hidden;
 }
 
 canvas {
@@ -64,16 +74,17 @@ canvas {
 }
 
 
-progress[value] {
+progress {
   margin-top: 2px;
   margin-left: 5px;
   background-color: white;
   border-radius: 5px;
   border: none;
+  opacity: .4;
 }
 
 progress::-webkit-progress-value{
-  background: #feb0b0;
+  background: linear-gradient(to right, #FEDBDB, #FEB7B7);
   opacity: .9;
 }
 
@@ -90,6 +101,8 @@ footer {
 
 .foot-container a{
   font-size: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
