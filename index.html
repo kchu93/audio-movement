@@ -88,10 +88,12 @@
 
       <div class="audio-file">
         <input type="file" class="thefile" id="thefile" accept="audio/*"/>
-        <button class="play-button"><i class="fas fa-play"></i></button>
+        <button class="play-button" id="play-button"><i class="fas fa-play"></i></button>
+        <button class="pause-button" id="pause-button"><i class="fas fa-pause"></i></button>
+        <progress class="seekbar" id="seekbar" value="0" max="1" style="width:200px;">
       </div>
 
-      <audio class="default-audio-player" id="audio" controls></audio>
+      <audio ontimeupdate="updateProgress()" class="default-audio-player" id="audio" controls></audio>
     </body>
     <script type="application/javascript" src="bundle.js"></script>
   </div>

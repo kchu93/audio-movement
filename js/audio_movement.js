@@ -4,8 +4,8 @@ window.onload = function() {
 
   let file = document.getElementById("thefile");
   let audio = document.getElementById("audio");
-  audio.src = './test.mp3';
-  // audio.crossOrigin = 'anonymous';
+  audio.src = './Miles_Davis.mp3';
+  audio.crossOrigin = 'anonymous';
 
 
   file.onchange = function() {
@@ -15,6 +15,22 @@ window.onload = function() {
     audio.play();
   };
 
+  let playButton = document.getElementById("play-button");
+  let pauseButton = document.getElementById("pause-button");
+
+  playButton.addEventListener("click", function(){
+    audio.play();
+  });
+
+  pauseButton.addEventListener("click", function(){
+    audio.pause();
+  });
+
+  audio.ontimeupdate = function updateProgress() {
+    let player = document.getElementById("audio");
+    let progressBar = document.getElementById("seekbar");
+    progressBar.value = (player.currentTime / player.duration);
+  };
 
   let audioCtx = new AudioContext();
   let source = audioCtx.createMediaElementSource(audio);
@@ -68,6 +84,6 @@ window.onload = function() {
       x += barWidth + 8;
     }
   }
-  audio.play();
+  audio.pause();
   render();
 };

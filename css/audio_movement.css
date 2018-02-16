@@ -15,7 +15,7 @@ html {
 
 .audio-movement-header {
   width: 75vw;
-  font-size: 20px;
+  font-size: 22px;
   padding: 7px;
   border-bottom: 2px solid #feb0b0;
   color: black;
@@ -52,7 +52,20 @@ canvas {
   width: 15%;
 }
 
-.play-button {
+.play-button, .pause-button {
   background: none;
   border: none;
+}
+
+.play-button:hover, .pause-button:hover {
+  color: #feb0b0;
+}
+
+progress{
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+progress::-moz-progress-bar{
+  background-color: red !important;
 }
