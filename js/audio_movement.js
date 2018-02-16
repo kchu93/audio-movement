@@ -37,13 +37,24 @@ window.onload = function() {
     audio.volume += .1;
   });
 
-
-
-
   audio.ontimeupdate = function updateProgress() {
     let player = document.getElementById("audio");
     progressBar.value = (player.currentTime / player.duration);
   };
+
+  let visualHeight = document.getElementById("adjust-visual-height");
+  let visualWidth = document.getElementById("adjust-visual-width");
+  let barHeightModifier = visualHeight.value / 20;
+  let barWidthModifier = visualWidth.value / 20;
+
+  visualHeight.addEventListener("input", function(){
+    barHeightModifier = event.currentTarget.value / 20;
+  });
+
+  visualWidth.addEventListener("input", function(){
+    barWidthModifier = event.currentTarget.value / 10;
+
+  });
 
 
 
@@ -56,8 +67,7 @@ window.onload = function() {
   analyser.fftsize = 2048;
 
   let bufferLength = analyser.frequencyBinCount;
-  console.log(bufferLength);
-  let dataArray = new Uint8Array(256);
+  let dataArray = new Uint8Array(1024);
 
   let canvas = document.getElementById("canvas");
   let canvasCtx = canvas.getContext("2d");
@@ -65,9 +75,10 @@ window.onload = function() {
   canvas.height = 600;
   let WIDTH = canvas.width;
   let HEIGHT = canvas.height;
-  let barWidth = (WIDTH / bufferLength) * 8;
+  let barWidth = (WIDTH / bufferLength) * 5;
   let barHeight;
   let x = 0;
+
 
   function render(){
     requestAnimationFrame(render);
@@ -80,7 +91,7 @@ window.onload = function() {
     canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
     for (let i = 0; i < bufferLength; i ++) {
-      barHeight = dataArray[i];
+      barHeight = dataArray[i] * barHeightModifier;
 
 
       let gradient = canvasCtx.createLinearGradient(0, 0, 0, 2000);
@@ -93,12 +104,10 @@ window.onload = function() {
 
       canvasCtx.fillStyle = gradient;
       canvasCtx.fillRect(x, HEIGHT-barHeight, barWidth, barHeight);
-      canvasCtx.imageSmoothingEnabled = false;
 
-
-      x += barWidth + 5;
+      x += barWidth + barWidthModifier;
     }
   }
-  audio.pause();
+  audio.play();
   render();
 };

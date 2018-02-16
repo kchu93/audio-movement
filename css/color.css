@@ -1,5 +1,4 @@
 .color-controller-container {
-  display: flex;
   padding: 2px;
   justify-content: center;
 }
@@ -54,6 +53,44 @@
   border: none;
   padding-top: 2px;
 }
+
+.gradient-controller-container{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.gradient-controller-container input {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.slider {
+  -webkit-appearance: none;
+   width: 10%;
+   height: 8px;
+   border-radius: 8px;
+   background: #F7F7F7;
+   outline: none;
+   opacity: 0.7;
+   -webkit-transition: .2s;
+   transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #feb0b0;
+  cursor: pointer;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
 
 
 /* individual color buttons */

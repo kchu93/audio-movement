@@ -113,6 +113,19 @@ window.onload = function () {
     progressBar.value = player.currentTime / player.duration;
   };
 
+  var visualHeight = document.getElementById("adjust-visual-height");
+  var visualWidth = document.getElementById("adjust-visual-width");
+  var barHeightModifier = visualHeight.value / 20;
+  var barWidthModifier = visualWidth.value / 20;
+
+  visualHeight.addEventListener("input", function () {
+    barHeightModifier = event.currentTarget.value / 20;
+  });
+
+  visualWidth.addEventListener("input", function () {
+    barWidthModifier = event.currentTarget.value / 10;
+  });
+
   var audioCtx = new AudioContext();
   var source = audioCtx.createMediaElementSource(audio);
   var analyser = audioCtx.createAnalyser();
@@ -122,8 +135,7 @@ window.onload = function () {
   analyser.fftsize = 2048;
 
   var bufferLength = analyser.frequencyBinCount;
-  console.log(bufferLength);
-  var dataArray = new Uint8Array(256);
+  var dataArray = new Uint8Array(1024);
 
   var canvas = document.getElementById("canvas");
   var canvasCtx = canvas.getContext("2d");
@@ -131,7 +143,7 @@ window.onload = function () {
   canvas.height = 600;
   var WIDTH = canvas.width;
   var HEIGHT = canvas.height;
-  var barWidth = WIDTH / bufferLength * 8;
+  var barWidth = WIDTH / bufferLength * 5;
   var barHeight = void 0;
   var x = 0;
 
@@ -146,7 +158,7 @@ window.onload = function () {
     canvasCtx.fillRect(x, x, WIDTH, HEIGHT);
 
     for (var i = 0; i < bufferLength; i++) {
-      barHeight = dataArray[i];
+      barHeight = dataArray[i] * barHeightModifier;
 
       var gradient = canvasCtx.createLinearGradient(0, 0, 0, 2000);
       gradient.addColorStop(0, _color_controller.COLORS.color1);
@@ -156,12 +168,11 @@ window.onload = function () {
 
       canvasCtx.fillStyle = gradient;
       canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
-      canvasCtx.imageSmoothingEnabled = false;
 
-      x += barWidth + 5;
+      x += barWidth + barWidthModifier;
     }
   }
-  audio.pause();
+  audio.play();
   render();
 };
 

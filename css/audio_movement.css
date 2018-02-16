@@ -29,6 +29,8 @@ canvas {
   height: 38vw;
 }
 
+
+/* Audio menu CSS */
 .audio-file {
   display: flex;
   justify-content: center;
@@ -39,9 +41,6 @@ canvas {
   display: none;
 }
 
-#visualizer_wrapper{
-	text-align: center;
-}
 
 .thefile {
   letter-spacing: 1px;
@@ -69,10 +68,32 @@ progress{
   margin-left: 5px;
 }
 
-progress::-moz-progress-bar{
-  background-color: red !important;
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-input[type=range]{
-  transform: rotate(270deg);
+.foot-container{
+  padding: 4px;
+  width: 75vw;
+}
+
+.foot-container a{
+  font-size: 30px;
+}
+
+.created-by-text-container {
+  padding: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.created-by-text-container a {
+  border-bottom: 1.5px solid #feb0b0;
+}
+
+.create-by-text {
+  font-size: 7px;
 }
