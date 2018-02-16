@@ -30,6 +30,7 @@ html {
   position: relative;
   line-height: 1em;
   overflow: hidden;
+  text-align: center;
 }
 
 canvas {

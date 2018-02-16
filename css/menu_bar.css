@@ -14,7 +14,6 @@
   font-size: 16px;
 }
 
-
 .drop-down-content {
   display: none;
   position: relative;
@@ -23,11 +22,11 @@
 
 .drop-down-show {
   display: block;
-  -webkit-animation: fadein 1.8s;
-      -moz-animation: fadein 1.8s;
-       -ms-animation: fadein 1.8s;
-        -o-animation: fadein 1.8s;
-           animation: fadein 1.8s;
+  -webkit-animation: fadein 2.0s;
+      -moz-animation: fadein 2.0s;
+       -ms-animation: fadein 2.0s;
+        -o-animation: fadein 2.0s;
+           animation: fadein 2.0s;
 }
 
 
