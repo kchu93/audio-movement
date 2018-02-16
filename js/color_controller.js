@@ -120,24 +120,28 @@ let setcolor40 = document.getElementById("setcolor40");
 
 gradient1.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
+  gradientAll.classList.remove("selected");
   gradientnum = 1;
   currentGradient = document.getElementById(`gradient${gradientnum}`);
   currentGradient.classList.add("selected");
 });
 gradient2.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
+  gradientAll.classList.remove("selected");
   gradientnum = 2;
   currentGradient = document.getElementById(`gradient${gradientnum}`);
   currentGradient.classList.add("selected");
 });
 gradient3.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
+  gradientAll.classList.remove("selected");
   gradientnum = 3;
   currentGradient = document.getElementById(`gradient${gradientnum}`);
   currentGradient.classList.add("selected");
 });
 gradient4.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
+  gradientAll.classList.remove("selected");
   gradientnum = 4;
   currentGradient = document.getElementById(`gradient${gradientnum}`);
   currentGradient.classList.add("selected");
@@ -146,6 +150,7 @@ gradient4.addEventListener("click", function(){
 gradientAll.addEventListener("click", function(){
   currentGradient.classList.remove("selected");
   gradientnum = 5;
+  gradientAll.classList.add("selected");
 });
 
 
