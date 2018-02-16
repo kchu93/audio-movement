@@ -6,6 +6,9 @@
 
 Audio Movement is a way for music enthusiasts to see their sounds come to life. Audio Movement will allow users to bring in bring their audio and have a visualization move to their song.
 
+
+![Screenshot](./ScreenShot1.png)
+
 ## Features:
 
 In Audio Movement, users are able to:
