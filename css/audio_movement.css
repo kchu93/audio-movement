@@ -28,9 +28,9 @@ canvas {
   height: 38vw;
 }
 
-.audio-and-file {
+.audio-file {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -43,20 +43,16 @@ canvas {
 }
 
 .thefile {
-  top: 20px;
-  left: 20px;
-  font-size: 12px;
-  padding: 15px 30px;
-
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   font-weight: bold;
   color: #feb0b0;
   display: block;
   cursor: pointer;
-  transition: transform .3s;
   z-index: 10;
+  width: 15%;
 }
 
-input {
-  display: none;
+.play-button {
+  background: none;
+  border: none;
 }
