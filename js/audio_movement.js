@@ -108,6 +108,6 @@ window.onload = function() {
       x += barWidth + barWidthModifier;
     }
   }
-  setTimeout(audio.play(), 2000);
+  setTimeout(audio.play(), 4000);
   render();
 };
