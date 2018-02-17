@@ -115,10 +115,10 @@ footer {
   justify-content: center;
 }
 
-.created-by-text-container a {
+.footer-name {
   border-bottom: 1.5px solid #feb0b0;
 }
 
-.create-by-text {
+.create-by-text, .footer-name {
   font-size: 7px;
 }
