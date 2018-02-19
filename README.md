@@ -1,6 +1,6 @@
 # Audio Movement
 
-[Live Site](https://kevinchu676.github.io/audio-movement/)
+[Live Site](https://kchu93.github.io/audio-movement/)
 
 ## Overview
 
