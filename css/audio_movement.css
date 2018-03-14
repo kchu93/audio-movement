@@ -6,7 +6,7 @@ html {
   background: white;
   text-align: center;
   padding-top: 5px;
-  animation: fadeinleft 2s ease-in;
+  animation: fadeinleft 2.5s ease-in;
 }
 
 @keyframes fadeinleft {
